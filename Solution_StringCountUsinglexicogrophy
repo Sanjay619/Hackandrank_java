@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Solution_StringCount {
+
+	
+	public static void main(String arg[]) {
+		 Scanner sc=new Scanner(System.in);
+	        String A=sc.next();
+	        String B=sc.next();
+	        
+	        int aLength = A.length();
+	        int bLength = B.length();
+	        
+	        System.out.println(aLength + bLength);
+	     	String a = A.substring(0, 1).toUpperCase() + A.substring(1);
+        	String b =B.substring(0, 1).toUpperCase() + B.substring(1); 
+        	
+        	int lex = A.compareToIgnoreCase(B);
+        	if(lex > 0) {
+        		System.out.println("Yes");
+        	}else {
+        		System.out.println("No");
+        	}
+        	
+        	System.out.println(a+" "+ b);
+      
+	
+		
+	}
+	
+}
